@@ -1,0 +1,11 @@
+<h1>All Genres</h1>
+
+<div id='genres'>
+  <% @genres.map do |genre| %>
+    <h2><%= genre.name %></h2>
+    <% genre.films.map do |film| %>
+      <h3><%= film.title %></h3>
+    <% end %>
+  <% end %>
+</div>
+  
